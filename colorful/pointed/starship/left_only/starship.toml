@@ -240,7 +240,7 @@ disabled = true
 
 ### Module configurations
 [aws]
-# disabled = true
+disabled = true
 symbol = "󰸏 " # nf-md-aws
 # symbol = " " # nf-weather-cloud
 style = "bg:color_aws fg:color_foreground_dark"
@@ -253,14 +253,14 @@ format = '[$symbol$profile(\($region\))(\[$duration\])]($style)'
 [aws.profile_aliases]
 
 [azure]
-# disabled = false
+disabled = true
 symbol = " " # nf-cod-azure
 # symbol = "󰠅 " # nf-md-microsoft_azure
 style = "bg:color_azure fg:color_foreground_dark"
 format = '[$symbol($subscription)]($style)'
 
 [battery]
-# disabled = true
+disabled = true
 full_symbol = "󰁹" # nf-md-battery
 charging_symbol = "󱊥 " # nf-md-battery_charging_medium
 discharging_symbol = "󱊡" # nf-md-battery_low
@@ -278,19 +278,19 @@ style = "bg:color_base_red_light fg:color_foreground_dark"
 # style = "bg:color_base_red_light fg:color_foreground_light"
 
 [buf]
-# disabled = true
+disabled = true
 symbol = " " # nf-fa-barcode
 style = "bg:color_buf fg:color_foreground_dark"
 format = "[$symbol($version)]($style)"
 
 [bun]
-# disabled = true
+disabled = true
 symbol = " " # nf-oct-smiley
 style = "bg:color_bun fg:color_foreground_dark"
 format = "[$symbol($version)]($style)"
 
 [c]
-# disabled = true
+disabled = true
 symbol = " " # nf-custom-c
 # symbol = "󰙱 " # nf-md-language_c
 # symbol = "C " # plain character
@@ -298,7 +298,7 @@ style = "bg:color_c fg:color_foreground_dark"
 format = "[$symbol($version(-$name))]($style)"
 
 [cmake]
-# disabled = true
+disabled = true
 symbol = "󰔷 " # nf-md-triangle_outline
 # symbol = "󰔶 " # nf-md-triangle
 style = "bg:color_cmake fg:color_foreground_light"
@@ -313,13 +313,13 @@ show_milliseconds = true
 format = "[ 󰔛 $duration]($style)"
 
 [cobol]
-# disabled = true
+disabled = true
 symbol = " " # nf-fa-cog
 style = "bg:color_cobol fg:color_foreground_dark"
 format = "[$symbol($version)]($style)"
 
 [conda]
-# disabled = true
+disabled = true
 symbol = "🅒 " # Negative Circled Latin Capital Letter C
 # symbol = " " # nf-fa-circle_o
 style = "bg:color_conda fg:color_foreground_dark"
@@ -334,27 +334,27 @@ style = "bg:color_package fg:color_foreground_light dimmed"
 format = '[$symbol\[$name\]]($style)'
 
 [crystal]
-# disabled = true
+disabled = true
 symbol = " " # nf-custom-crystal
 # symbol = "󰬯" # nf-md-crystal_ball
 style = "bg:color_crystal fg:color_foreground_dark"
 format = "[$symbol($version)]($style)"
 
 [daml]
-# disabled = true
+disabled = true
 symbol = "𝜦 " # Capital lambda - U+1D726
 style = "bg:color_daml fg:color_foreground_dark"
 format = "[$symbol($version)]($style)"
 
 [dart]
-# disabled = true
+disabled = true
 symbol = " " # nf-dev-dart
 # symbol = " " # nf-seti-dart
 style = "bg:color_dart fg:color_foreground_dark"
 format = "[$symbol($version)]($style)"
 
 [deno]
-# disabled = true
+disabled = true
 symbol = " " # nf-dev-javascript_badge
 style = "bg:color_deno fg:color_foreground_light"
 format = "[$symbol($version)]($style)"
@@ -409,20 +409,20 @@ style = "bg:color_docker fg:color_foreground_light"
 format = "[$symbol$context]($style)"
 
 [dotnet]
-# disabled = true
+disabled = true
 symbol = " " # nf-dev-dotnet
 style = "bg:color_dotnet fg:color_foreground_light"
 heuristic = true
 format = "[$symbol($version)( 󰓾 $tfm)]($style)" # 󰓾 = nf-md-target
 
 [elixir]
-# disabled = true
+disabled = true
 symbol = " " # nf-custom-elixir
 style = "bg:color_elixir fg:color_foreground_light"
 format = '[$symbol($version) (\(OTP:$otp_version\))]($style)'
 
 [elm]
-# disabled = true
+disabled = true
 symbol = " " # nf-custom-elm
 # symbol = " " # nf-fae-tree
 style = "bg:color_elm fg:color_foreground_light"
@@ -437,13 +437,13 @@ default = " 󱃓 " # shows if not defined - nf-md-circle_off_outline
 format = "[$symbol$env_value]($style)"
 
 [erlang]
-# disabled = true
+disabled = true
 symbol = " " # nf-dev-erlang
 style = "bg:color_erlang fg:color_foreground_light"
 format = "[$symbol($version)]($style)"
 
 [fennel]
-# disabled = false
+disabled = true
 symbol = "󰬍 " # nf-md-alpha_f_box
 # symbol = " " # nf-fa-smile_o
 style = "bg:color_fennel fg:color_foreground_light"
@@ -455,7 +455,7 @@ symbol = ' '
 style = 'none'
 
 [fossil_branch]
-# disabled = false
+disabled = true
 symbol = "󰘬" # nf-md-source_branch
 style = "bg:color_fossil fg:color_foreground_dark"
 # truncation_length = 4 # default = 9223372036854775807
@@ -463,7 +463,7 @@ style = "bg:color_fossil fg:color_foreground_dark"
 format = "[$symbol$branch]($style) "
 
 [gcloud]
-# disabled = true
+disabled = true
 symbol = "󱇶 " # nf-md-google_cloud
 style = "bg:color_gcloud fg:color_foreground_light"
 format = '[$symbol$account(@$domain)(\($region\))]($style)'
@@ -560,8 +560,8 @@ stashed = "  ${count}" # nf-fa-bank
 up_to_date = ""
 ahead = "󰞙 ${count}" # nf-md-arrow_expand_up
 behind = "󰞖 ${count}" # nf-md-arrow_expand_down
-diverged = "󰡏 ${ahead_count} ${behind_count}" # nf-md-arrow_expand_vertical
-# diverged = "󰯎 ${ahead_count} ${behind_count}" # nf-md-swap_vertical_bold
+# diverged = "󰡏 ${ahead_count} ${behind_count}" # nf-md-arrow_expand_vertical
+diverged = "󰯎 ${ahead_count} ${behind_count}" # nf-md-swap_vertical_bold
 # ignore_submodules = true
 format = "[($staged$modified$renamed$untracked$deleted$conflicted$stashed$ahead_behind )]($style)"
 
@@ -573,7 +573,7 @@ style = "bg:color_golang fg:color_foreground_dark"
 format = "[$symbol($version)]($style)"
 
 [gradle]
-# disabled = true
+disabled = true
 symbol = " " # nf-seti-gradle
 # symbol = "󰟆 " # nf-md-elephant
 style = "bg:color_gradle fg:color_foreground_dark"
@@ -581,14 +581,14 @@ style = "bg:color_gradle fg:color_foreground_dark"
 format = "[$symbol($version)]($style)"
 
 [guix_shell]
-# disabled = true
+disabled = true
 symbol = " " # nf-linux-gnu_guix
 # symbol = "󰆚 " # nf-md-cow
 style = "bg:color_guix fg:color_foreground_dark"
 format = '[$symbol]($style)[shell]($style)'
 
 [haskell]
-# disabled = true
+disabled = true
 symbol = " " # nf-seti-haskell
 # symbol = "[λ](bold bg:color_haskell fg:color_foreground_dark)" # Small greek lambda - U+03BB
 style = "bg:color_haskell fg:color_foreground_dark"
@@ -598,14 +598,14 @@ format = "[$symbol($version)]($style)"
 ##   ghc_version = Currently installed GHC version
 
 [haxe]
-# disabled = true
+disabled = true
 symbol = " " # nf-seti-haxe
 # symbol = "󰐴 " # nf-md-quadcopter
 style = "bg:color_haxe fg:color_foreground_dark"
 format = "[$symbol($version)]($style)"
 
 [helm]
-# disabled = true
+disabled = true
 symbol = "󰠳 " # nf-md-ship_wheel
 style = "bg:color_helm fg:color_foreground_light"
 format = "[$symbol($version)]($style)"
@@ -619,7 +619,7 @@ trim_at = "."
 format = "[($ssh_symbol)$hostname]($style)"
 
 [java]
-# disabled = true
+disabled = true
 symbol = " " # nf-fae-java
 style = "bg:color_java fg:color_foreground_dark"
 format = "[$symbol($version)]($style)"
@@ -633,19 +633,19 @@ style = "bold bg:color_background_base fg:color_base_orange"
 format = "[$symbol$number]($style)"
 
 [julia]
-# disabled = true
+disabled = true
 symbol = " " # nf-seti-julia
 style = "bg:color_julia fg:color_foreground_light"
 format = "[$symbol($version)]($style)"
 
 [kotlin]
-# disabled = true
+disabled = true
 symbol = "󱈙 " # nf-md-language_kotlin
 style = "bg:color_kotlin fg:color_foreground_light"
 format = "[$symbol($version)]($style)"
 
 [kubernetes]
-disabled = false
+disabled = true
 symbol = "󱃾 " # nf-md-kubernetes
 style = "bg:color_kubernetes fg:color_foreground_light"
 format = '[$symbol$context(\($namespace\))]($style)'
@@ -664,7 +664,7 @@ style = "bg:color_background_base fg:color_base_orange"
 format = "[ 󰩠 $localipv4]($style)" # 󰩠 = nf-md-ip_network
 
 [lua]
-# disabled = true
+disabled = true
 symbol = "󰢱 " # nf-md-language_lua
 style = "bg:color_lua fg:color_foreground_light"
 format = "[$symbol($version)]($style)"
@@ -681,7 +681,7 @@ format = "[$symbol$ram(:$swap)]($style)"
 
 # Mercurial
 [hg_branch]
-disabled = false
+disabled = true
 symbol = "󰘬" # nf-md-source_branch
 style = "bg:color_mercurial fg:color_foreground_dark"
 # truncation_length = 8 # default = 9223372036854775807
@@ -689,7 +689,7 @@ style = "bg:color_mercurial fg:color_foreground_dark"
 format = "[$symbol$branch]($style)"
 
 [meson]
-# disabled = true
+disabled = true
 symbol = "󰔶 " # nf-md-triangle
 # symbol = "▲" # black up-pointing triangle
 style = "bg:color_meson fg:color_foreground_light"
@@ -698,7 +698,7 @@ style = "bg:color_meson fg:color_foreground_light"
 format = "[$symbol$project]($style)"
 
 [nim]
-# disabled = true
+disabled = true
 symbol = "" # nf-seti-nim
 # symbol = " " # nf-fae-crown
 style = "bg:color_nim fg:color_foreground_dark"
@@ -724,26 +724,26 @@ not_capable_style = "bg:color_nodejs fg:color_base_red"
 format = "[$symbol($version)]($style)"
 
 [ocaml]
-# disabled = true
+disabled = true
 symbol = " " # nf-seti-ocaml
 style = "bg:color_ocaml fg:color_foreground_dark"
 format = '[$symbol($version)( \($switch_indicator$switch_name\))]($style)'
 
 [opa]
-# disabled = true
+disabled = true
 symbol = "󱅧 " # nf-md-police_badge
 # symbol = "󱢼 " # nf-md-shield_crown
 style = "bg:color_opa fg:color_foreground_dark"
 format = "[$symbol($version)]($style)"
 
 [openstack]
-# disabled = true
+disabled = true
 symbol = " " # nf-weather-cloud
 style = "bg:color_openstack fg:color_foreground_light"
 format = '[$symbol$cloud(\($project\))]($style)'
 
 [os]
-# disabled = false
+disabled = true
 style = "bg:color_os fg:color_foreground_dark"
 # format = '[$symbol(v$version)(  $edition)(  $codename)(  $type)]($style)'
 ## uncomment the format above for all available information and comment out the line below
@@ -799,21 +799,21 @@ Unknown = " " # nf-fa-question_circle
 Windows = " " # nf-fa-windows
 
 [package]
-# disabled = true
+disabled = true
 symbol = " " # nf-oct-package
 style = "bg:color_package fg:color_foreground_light"
 display_private = true
 format = "[$symbol($version)]($style)"
 
 [perl]
-# disabled = true
+disabled = true
 symbol = " " # nf-seti-perl
 # symbol = " " # nf-dev-perl
 style = "bg:color_perl fg:color_foreground_light"
 format = "[$symbol($version)]($style)"
 
 [php]
-# disabled = true
+disabled = true
 symbol = " " # nf-dev-php
 # symbol = "󰌟 " # nf-md-language_php
 # symbol = "" # nf-seti-php
@@ -821,7 +821,7 @@ style = "bg:color_php fg:color_foreground_light"
 format = "[$symbol($version)]($style)"
 
 [pijul_channel]
-# disabled = false
+disabled = true
 symbol = "󰘬" # nf-md-source_branch
 style = "bg:color_pijul_channel fg:color_foreground_light"
 # truncation_length = 4 # default = 9223372036854775807
@@ -829,7 +829,7 @@ style = "bg:color_pijul_channel fg:color_foreground_light"
 format = "[$symbol$channel]($style) "
 
 [pulumi]
-# disabled = true
+disabled = true
 symbol = " " # nf-fa-cube
 style = "bg:color_pulumi fg:color_foreground_light"
 search_upwards = true
@@ -838,7 +838,7 @@ search_upwards = true
 format = "[$symbol($username@)$stack]($style)"
 
 [purescript]
-# disabled = true
+disabled = true
 symbol = " " # nf-custom-purescript
 # symbol = "⇔ " # left right double arrow - U+21D4
 style = "bg:color_purescript fg:color_foreground_light"
@@ -855,19 +855,19 @@ python_binary = [ "python3", "python", "python2" ]
 format = '[${symbol}(${pyenv_prefix}${version})(\($virtualenv\))]($style)'
 
 [raku]
-# disabled = true
+disabled = true
 symbol = " " # nf-fae-butterfly
 style = "bg:color_raku fg:color_foreground_light"
 format = "[$symbol($version)(-$vm_version)]($style)"
 
 [red]
-# disabled = true
+disabled = true
 symbol = "󱥒 " # nf-md-pyramid
 style = "bg:color_red fg:color_foreground_dark"
 format = "[$symbol($version)]($style)"
 
 [rlang]
-# disabled = true
+disabled = true
 symbol = "󰟔 " # nf-md-language_r
 style = "bg:color_rlang fg:color_foreground_light"
 format = "[$symbol($version)]($style)"
@@ -881,19 +881,19 @@ style = "bg:color_ruby fg:color_foreground_light"
 format = "[$symbol($version)]($style)"
 
 [rust]
-# disabled = true
+disabled = true
 symbol = "󱘗 " # nf-md-language_rust
 style = "bg:color_rust fg:color_foreground_light"
 format = "[$symbol($version)]($style)"
 
 [scala]
-# disabled = true
+disabled = true
 symbol = " " # nf-dev-scala
 style = "bg:color_scala fg:color_foreground_light"
 format = "[$symbol($version)]($style)"
 
 [shell]
-disabled = false
+disabled = true
 bash_indicator = '\$_'
 fish_indicator = "" # Empty string as Fish Shell is my default shell
 # fish_indicator = "⋖⋗⋖"
@@ -910,7 +910,7 @@ style = "bg:color_foreground_dark fg:color_foreground_light"
 format = "[$indicator]($style)"
 
 [shlvl]
-disabled = false
+disabled = true
 symbol = " " # nf-fa-level_up
 style = "bold bg:color_background_base fg:color_shell_level"
 # repeat = true
@@ -918,13 +918,13 @@ style = "bold bg:color_background_base fg:color_shell_level"
 format = "[$symbol$shlvl]($style)"
 
 [singularity] # now Apptainer
-# disabled = true
+disabled = true
 symbol = "󰰣 " # nf-md-alpha_s_circle_outline
 style = "bg:color_singularity fg:color_foreground_light"
 format = '[$symbol\[$env\]]($style)'
 
 [spack]
-# disabled = true
+disabled = true
 symbol = "󰦻 " # nf-md-arrow_decision
 style = "bg:color_spack fg:color_foreground_light"
 # truncation_length = 0 # default = 1
@@ -954,7 +954,7 @@ style = "bg:color_base_red_light fg:color_foreground_light"
 format = "[$symbol]($style)"
 
 [swift]
-# disabled = true
+disabled = true
 symbol = "󰛥 " # nf-md-language_swift
 # symbol = "" # nf-seti-swift
 style = "bg:color_swift fg:color_foreground_light"
@@ -965,9 +965,9 @@ format = "[$symbol($version)]($style)"
 symbol = "󱁢 " # nf-md-terraform
 # symbol = " " # nf-seti-terraform
 style = "bg:color_terraform fg:color_foreground_light"
-# format = '[$symbol($version)\($workspace\)]($style)'
+format = '[$symbol($version)\($workspace\)]($style)'
 ## uncomment the format above to see the version and comment out the line below
-format = '[$symbol$workspace]($style)'
+# format = '[$symbol$workspace]($style)'
 
 [time]
 disabled = false
@@ -975,7 +975,7 @@ disabled = false
 style = "bg:color_time fg:color_foreground_dark"
 # use_12hr = true
 time_format = "%H:%M"
-time_range = "20:00:00-06:00:00" # adjust the time rang to your liking or comment it out, to have it shown all the time
+# time_range = "20:00:00-06:00:00" # adjust the time rang to your liking or comment it out, to have it shown all the time
 format = "[ $time]($style)" #  = nf-oct-clock
 
 [username]
@@ -986,25 +986,25 @@ style_user = "bg:color_username fg:color_foreground_light"
 format = "[$user]($style)"
 
 [vagrant]
-# disabled = true
+disabled = true
 symbol = "⍱ " # apl functional symbol down caret tilde - U+2371
 style = "bg:color_vagrant fg:color_foreground_light"
 format = "[$symbol($version)]($style)"
 
 [vcsh]
-# disabled = true
+disabled = true
 symbol = "󰳏 " # nf-md-source_repository
 style = "bg:color_vcsh fg:color_foreground_light"
 format = "[$symbol$repo]($style)"
 
 [vlang]
-# disabled = true
+disabled = true
 symbol = "󱑹 " # nf-md-cosine_wave
 style = "bg:color_vlang fg:color_foreground_light"
 format = "[$symbol($version)]($style)"
 
 [zig]
-# disabled = true
+disabled = true
 symbol = " " # nf-seti-zig
 # symbol = '\[Z\] '
 style = "bg:color_zig fg:color_foreground_light"
